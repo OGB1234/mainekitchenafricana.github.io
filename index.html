@@ -1,0 +1,1717 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="theme-color" content="#102A2B">
+<meta name="description" content="Maine Kitchen Africana.com — authentic Nigerian food, fresh food packs, doorstep delivery and event catering in Dugbe, Ibadan.">
+
+<title>Maine Kitchen Africana.com | Nigerian Restaurant</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=DM+Sans:wght@400;500;600&display=swap');
+
+:root{
+--ink:#102A2B;
+--ink-soft:#24494A;
+--teal:#2E6F70;
+--sea:#B8D3CC;
+--oat:#F4F0E8;
+--cream:#FBFAF6;
+--coral:#D87C62;
+--line:#D7DED7;
+--serif:'Cormorant Garamond',Georgia,serif;
+--sans:'DM Sans',Arial,sans-serif
+}
+
+*{
+box-sizing:border-box
+}
+
+html{
+scroll-behavior:smooth
+}
+
+body{
+margin:0;
+background:var(--cream);
+color:var(--ink);
+font:15px/1.65 var(--sans)
+}
+
+a{
+color:inherit;
+text-decoration:none
+}
+
+button,input,textarea{
+font:inherit
+}
+
+button{
+cursor:pointer
+}
+
+::selection{
+background:var(--sea);
+color:var(--ink)
+}
+
+/* HEADER */
+
+.site-header{
+position:absolute;
+z-index:5;
+top:0;
+width:100%;
+padding:28px 5vw;
+color:var(--cream)
+}
+
+.header-inner{
+display:flex;
+align-items:center;
+justify-content:space-between;
+max-width:1400px;
+margin:auto
+}
+
+.brand{
+display:flex;
+flex-direction:column;
+width:max-content;
+color:inherit;
+line-height:1
+}
+
+.brand-name{
+font:600 34px/.8 var(--serif);
+letter-spacing:-.04em
+}
+
+.brand-sub{
+margin-top:8px;
+font:600 9px var(--sans);
+letter-spacing:.22em
+}
+
+.brand-sub i{
+color:var(--coral);
+font-size:14px;
+margin-left:3px
+}
+
+.main-nav{
+display:flex;
+align-items:center;
+gap:34px;
+font-size:12px;
+font-weight:500;
+letter-spacing:.07em
+}
+
+.main-nav a:not(.nav-cta){
+opacity:.82
+}
+
+.main-nav a:not(.nav-cta):hover{
+opacity:1
+}
+
+.nav-cta{
+display:flex;
+align-items:center;
+gap:8px;
+border-bottom:1px solid currentColor;
+padding-bottom:5px
+}
+
+.menu-toggle{
+display:none;
+color:inherit;
+background:none;
+border:0
+}
+
+/* HERO */
+
+.hero{
+position:relative;
+min-height:760px;
+overflow:hidden;
+display:grid;
+grid-template-columns:46% 54%;
+background:var(--ink);
+color:var(--cream)
+}
+
+.hero-copy{
+position:relative;
+z-index:2;
+align-self:center;
+padding:140px 4vw 80px 10vw;
+max-width:780px
+}
+
+.eyebrow,
+.section-label,
+.detail-label{
+text-transform:uppercase;
+letter-spacing:.17em;
+font-size:10px;
+font-weight:600
+}
+
+.eyebrow{
+color:var(--sea);
+margin:0 0 27px
+}
+
+.hero h1,
+.story h2,
+.menu-heading h2,
+.visit h2,
+.contact h2{
+font:500 clamp(55px,7vw,102px)/.87 var(--serif);
+letter-spacing:-.04em;
+margin:0
+}
+
+.hero h1 em,
+.story h2 em,
+.menu-heading h2 em,
+.visit h2 em,
+.contact h2 em{
+color:var(--sea);
+font-style:italic
+}
+
+.hero-intro{
+max-width:390px;
+color:#D1DDD7;
+margin:36px 0 32px;
+font-size:16px
+}
+
+.hero-actions{
+display:flex;
+align-items:center;
+gap:26px
+}
+
+.button{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:12px;
+padding:14px 18px;
+border:1px solid transparent;
+text-transform:uppercase;
+letter-spacing:.12em;
+font-size:10px;
+font-weight:600;
+transition:transform .2s,background .2s
+}
+
+.button:hover{
+transform:translateY(-2px)
+}
+
+.button-dark{
+background:var(--coral);
+color:var(--cream)
+}
+
+.button-dark:hover{
+background:#c9674e
+}
+
+.button-light{
+background:var(--cream);
+color:var(--ink)
+}
+
+.text-link{
+display:inline-flex;
+align-items:center;
+gap:10px;
+border-bottom:1px solid currentColor;
+padding-bottom:4px;
+font-size:11px;
+text-transform:uppercase;
+letter-spacing:.13em
+}
+
+.text-link span{
+color:var(--coral);
+font-size:18px;
+line-height:0
+}
+
+.hero-image-wrap{
+position:relative;
+min-height:760px
+}
+
+.hero-image{
+width:100%;
+height:100%;
+object-fit:cover;
+opacity:.86
+}
+
+.hero-image-wrap:after{
+content:"";
+position:absolute;
+inset:0;
+background:
+linear-gradient(90deg,var(--ink),transparent 35%),
+linear-gradient(0deg,rgba(16,42,43,.35),transparent 40%)
+}
+
+.hero-caption{
+position:absolute;
+z-index:1;
+bottom:32px;
+right:5vw;
+left:5vw;
+display:flex;
+justify-content:space-between;
+color:var(--cream);
+font-size:10px;
+letter-spacing:.13em;
+text-transform:uppercase
+}
+
+.hero-caption span:first-child{
+color:var(--coral)
+}
+
+.hero-stamp{
+position:absolute;
+z-index:2;
+right:43%;
+bottom:42px;
+width:86px;
+height:86px;
+border:1px solid rgba(255,255,255,.45);
+border-radius:50%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+transform:rotate(-12deg)
+}
+
+.hero-stamp span{
+font:italic 34px var(--serif)
+}
+
+.hero-stamp small{
+font-size:7px;
+letter-spacing:.16em
+}
+
+/* RIBBON */
+
+.ribbon{
+background:var(--coral);
+color:var(--cream);
+padding:15px 5vw;
+overflow:hidden
+}
+
+.ribbon p{
+margin:0;
+text-align:center;
+font-size:10px;
+font-weight:600;
+letter-spacing:.19em;
+text-transform:uppercase;
+white-space:nowrap
+}
+
+.ribbon span{
+margin:0 18px;
+color:#f8cfb7
+}
+
+/* GENERAL SECTIONS */
+
+.section{
+padding:120px 10vw;
+max-width:1500px;
+margin:auto
+}
+
+.section-label{
+display:flex;
+align-items:center;
+gap:16px;
+color:var(--teal);
+margin-bottom:55px
+}
+
+.section-label span:first-child{
+color:var(--coral)
+}
+
+.section-label:after{
+content:"";
+display:block;
+height:1px;
+width:58px;
+background:var(--line)
+}
+
+/* STORY */
+
+.story{
+position:relative;
+min-height:690px
+}
+
+.story-grid{
+display:grid;
+grid-template-columns:1.15fr .85fr;
+gap:10vw
+}
+
+.story-copy{
+align-self:end;
+max-width:400px;
+padding-bottom:10px
+}
+
+.story-copy p{
+color:#526467
+}
+
+.story-copy .lead{
+color:var(--ink);
+font:500 25px/1.15 var(--serif);
+margin:0 0 22px
+}
+
+.story-copy .text-link{
+margin-top:24px
+}
+
+.story-card{
+position:absolute;
+right:8vw;
+bottom:70px;
+width:280px;
+padding:28px;
+background:var(--sea);
+transform:rotate(3deg);
+box-shadow:12px 16px 0 rgba(46,111,112,.1)
+}
+
+.card-mark{
+color:var(--coral);
+font-size:21px
+}
+
+.story-card p{
+margin:20px 0 22px;
+font:italic 500 25px/1.05 var(--serif)
+}
+
+.card-signoff{
+font-size:10px;
+letter-spacing:.08em
+}
+
+/* MENU */
+
+.menu-section{
+max-width:none;
+background:var(--oat);
+padding-left:17vw;
+padding-right:17vw
+}
+
+.menu-heading{
+display:flex;
+justify-content:space-between;
+align-items:end;
+gap:40px
+}
+
+.menu-heading h2{
+font-size:clamp(64px,8vw,110px)
+}
+
+.menu-heading p{
+width:320px;
+color:#526467;
+margin-bottom:10px
+}
+
+.menu-list{
+max-width:900px;
+margin-top:70px
+}
+
+.menu-item{
+display:flex;
+align-items:baseline;
+justify-content:space-between;
+gap:30px;
+padding:27px 0;
+border-bottom:1px solid var(--line)
+}
+
+.menu-item h3{
+margin:0 0 5px;
+font:600 29px/1 var(--serif)
+}
+
+.menu-item p{
+margin:0;
+color:#6c7975;
+font-size:12px
+}
+
+.menu-item>span{
+font:600 23px var(--serif);
+color:var(--teal);
+white-space:nowrap
+}
+
+.menu-note{
+color:#7b8781;
+font-size:11px;
+font-style:italic;
+margin-top:24px
+}
+
+/* GALLERY */
+
+.gallery{
+padding-bottom:150px
+}
+
+.gallery-intro{
+display:flex;
+justify-content:space-between;
+align-items:end
+}
+
+.gallery-intro .section-label{
+margin-bottom:0
+}
+
+.gallery-intro p{
+color:var(--teal);
+font:italic 500 28px var(--serif);
+margin:0
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:1.2fr .8fr;
+gap:24px;
+align-items:end;
+margin-top:55px
+}
+
+.gallery-grid figure{
+margin:0;
+position:relative
+}
+
+.gallery-grid img{
+display:block;
+width:100%;
+object-fit:cover;
+filter:saturate(.9)
+}
+
+.gallery-large img{
+height:560px
+}
+
+.gallery-small{
+margin-bottom:80px!important
+}
+
+.gallery-small img{
+height:360px
+}
+
+.gallery-grid figcaption{
+display:flex;
+justify-content:space-between;
+padding-top:12px;
+color:var(--teal);
+font-size:10px;
+text-transform:uppercase;
+letter-spacing:.14em
+}
+
+.gallery-grid figcaption span{
+color:var(--coral);
+font-size:18px
+}
+
+/* VISIT */
+
+.visit{
+max-width:none;
+background:var(--ink);
+color:var(--cream)
+}
+
+.visit .section-label{
+color:var(--sea)
+}
+
+.visit-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10vw;
+align-items:end
+}
+
+.visit h2{
+font-size:clamp(65px,8vw,112px)
+}
+
+.visit .button{
+margin-top:45px
+}
+
+.visit-details{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:52px 40px;
+border-top:1px solid rgba(255,255,255,.22);
+padding-top:30px
+}
+
+.detail-label{
+display:flex;
+align-items:center;
+gap:8px;
+color:var(--sea)
+}
+
+.visit-details p{
+margin:12px 0 0;
+color:#cad5cd;
+font-size:14px
+}
+
+.visit-details a:hover{
+color:var(--coral)
+}
+
+/* CONTACT */
+
+.contact{
+background:var(--sea);
+max-width:none
+}
+
+.contact .section-label{
+color:var(--ink)
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10vw
+}
+
+.contact h2{
+font-size:clamp(58px,7vw,102px)
+}
+
+.contact-grid>div>p{
+max-width:390px;
+color:var(--ink-soft);
+margin:28px 0
+}
+
+.contact-social{
+display:flex;
+align-items:center;
+gap:22px;
+font-size:13px;
+flex-wrap:wrap
+}
+
+.contact-social a{
+border-bottom:1px solid var(--ink)
+}
+
+.contact-form{
+display:flex;
+flex-direction:column;
+gap:21px;
+padding-top:7px
+}
+
+.contact-form label{
+display:flex;
+flex-direction:column;
+gap:7px;
+text-transform:uppercase;
+font-size:10px;
+letter-spacing:.14em;
+font-weight:600
+}
+
+.contact-form input,
+.contact-form textarea{
+border:0;
+border-bottom:1px solid rgba(16,42,43,.4);
+border-radius:0;
+padding:10px 0;
+outline:none;
+background:transparent;
+color:var(--ink);
+resize:vertical
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+color:rgba(16,42,43,.55)
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+border-bottom-color:var(--coral)
+}
+
+.contact-form .button{
+align-self:flex-start;
+margin-top:8px
+}
+
+.form-success{
+padding:40px 0
+}
+
+.form-success span{
+color:var(--coral);
+font-size:24px
+}
+
+.form-success h3{
+margin:16px 0 5px;
+font:500 38px var(--serif)
+}
+
+.form-success p{
+margin:0
+}
+
+/* FOOTER */
+
+.site-footer{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:32px 5vw;
+background:var(--oat);
+color:var(--ink)
+}
+
+.site-footer .brand-name{
+font-size:28px
+}
+
+.site-footer p{
+margin:0;
+color:#667672;
+font:italic 18px var(--serif)
+}
+
+.site-footer>span{
+color:#7b8781;
+font-size:10px;
+text-transform:uppercase;
+letter-spacing:.1em
+}
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+.site-header{
+padding:23px 6vw
+}
+
+.brand-name{
+font-size:27px
+}
+
+.menu-toggle{
+display:block;
+position:relative;
+z-index:3;
+font-size:25px
+}
+
+.main-nav{
+display:none;
+position:absolute;
+top:0;
+right:0;
+left:0;
+flex-direction:column;
+align-items:flex-start;
+gap:22px;
+padding:90px 8vw 35px;
+background:var(--ink)
+}
+
+.main-nav.is-open{
+display:flex
+}
+
+.hero{
+display:block;
+min-height:850px
+}
+
+.hero-copy{
+padding:155px 9vw 70px
+}
+
+.hero h1{
+font-size:clamp(56px,14vw,90px)
+}
+
+.hero-image-wrap{
+min-height:390px
+}
+
+.hero-image-wrap:after{
+background:linear-gradient(0deg,var(--ink),transparent 55%)
+}
+
+.hero-stamp{
+display:none
+}
+
+.section{
+padding:85px 9vw
+}
+
+.story{
+min-height:auto
+}
+
+.story-grid,
+.visit-grid,
+.contact-grid{
+display:block
+}
+
+.story-copy{
+margin-top:40px
+}
+
+.story-card{
+position:relative;
+right:auto;
+bottom:auto;
+margin:65px 0 5px auto
+}
+
+.menu-section{
+padding-left:9vw;
+padding-right:9vw
+}
+
+.menu-heading{
+display:block
+}
+
+.menu-heading p{
+margin:25px 0 0;
+width:auto
+}
+
+.menu-list{
+margin-top:50px
+}
+
+.menu-item{
+gap:15px
+}
+
+.menu-item h3{
+font-size:25px
+}
+
+.menu-item>span{
+font-size:20px
+}
+
+.gallery-intro{
+display:block
+}
+
+.gallery-intro p{
+margin-top:25px
+}
+
+.gallery-grid{
+display:block
+}
+
+.gallery-large img{
+height:450px
+}
+
+.gallery-small{
+margin:32px 0 0 22vw!important
+}
+
+.gallery-small img{
+height:310px
+}
+
+.visit-details{
+margin-top:65px
+}
+
+.contact-grid>div>p{
+margin-top:25px
+}
+
+.contact-form{
+margin-top:55px
+}
+
+.site-footer{
+display:block
+}
+
+.site-footer p{
+margin:23px 0
+}
+
+.site-footer>span{
+display:block
+}
+
+}
+
+@media(prefers-reduced-motion:reduce){
+
+*,
+*::before,
+*::after{
+scroll-behavior:auto!important;
+transition:none!important;
+animation:none!important
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="site-header">
+
+<div class="header-inner">
+
+<a class="brand" href="#top" aria-label="Maine Kitchen Africana.com home">
+
+<span class="brand-name">
+Maine Kitchen Africana.com
+</span>
+
+<span class="brand-sub">
+RESTAURANT <i>~</i>
+</span>
+
+</a>
+
+<button
+class="menu-toggle"
+id="menuToggle"
+aria-label="Open navigation"
+>
+☰
+</button>
+
+<nav class="main-nav" id="nav">
+
+<a href="#menu">Menu</a>
+
+<a href="#story">About Us</a>
+
+<a href="#visit">Location</a>
+
+<a
+class="nav-cta"
+href="#contact"
+>
+Make an enquiry ↗
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="top">
+
+<div class="hero-copy">
+
+<p class="eyebrow">
+Authentic Nigerian Kitchen · Dugbe, Ibadan
+</p>
+
+<h1>
+Come hungry.<br>
+<em>Leave satisfied.</em>
+</h1>
+
+<p class="hero-intro">
+Fresh Nigerian meals prepared with authentic local flavours,
+generous portions, and the kind of food that keeps you coming back.
+</p>
+
+<div class="hero-actions">
+
+<a
+class="button button-dark"
+href="#menu"
+>
+Explore the menu ↗
+</a>
+
+<a
+class="text-link"
+href="#visit"
+>
+Find us <span>↘</span>
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-image-wrap">
+
+<img
+class="hero-image"
+src="/manus-storage/async-images/Y6ywjJt76H2BiiPuty8y8e/image-1.webp"
+alt="Delicious Nigerian food served at Maine Kitchen Africana"
+>
+
+<div class="hero-caption">
+
+<span>01</span>
+
+<span>Authentic Nigerian flavours</span>
+
+</div>
+
+</div>
+
+
+<div class="hero-stamp">
+
+<span>MK</span>
+
+<small>IBADAN</small>
+
+</div>
+
+</section>
+
+
+<!-- RIBBON -->
+
+<div class="ribbon">
+
+<p>
+Fresh Food <span>✦</span>
+Local Flavours <span>✦</span>
+Food Packs <span>✦</span>
+Delivery <span>✦</span>
+Event Catering
+</p>
+
+</div>
+
+
+<!-- ABOUT -->
+
+<section
+class="story section"
+id="story"
+>
+
+<div class="section-label">
+
+<span>02</span>
+
+<span>About Us</span>
+
+</div>
+
+
+<div class="story-grid">
+
+<div>
+
+<h2>
+A little tradition.<br>
+<em>A lot of flavour.</em>
+</h2>
+
+</div>
+
+
+<div class="story-copy">
+
+<p class="lead">
+Maine Kitchen Africana brings authentic Nigerian food
+to the heart of Dugbe, Ibadan.
+</p>
+
+<p>
+We prepare delicious Nigerian meals using familiar local
+ingredients and traditional flavours. From rich soups and
+stews to satisfying rice dishes, every meal is made to be
+fresh, filling, and enjoyable.
+</p>
+
+<p>
+We also provide daily fresh food packs, doorstep delivery,
+and catering for events and special occasions.
+</p>
+
+<a
+class="text-link"
+href="#contact"
+>
+Make an enquiry <span>↘</span>
+</a>
+
+</div>
+
+</div>
+
+
+<div class="story-card">
+
+<span class="card-mark">
+✦
+</span>
+
+<p>
+“Authentic food,
+freshly prepared,
+served with heart.”
+</p>
+
+<span class="card-signoff">
+— Maine Kitchen Africana
+</span>
+
+</div>
+
+</section>
+
+
+<!-- MENU -->
+
+<section
+class="menu-section section"
+id="menu"
+>
+
+<div class="section-label">
+
+<span>03</span>
+
+<span>The Menu</span>
+
+</div>
+
+
+<div class="menu-heading">
+
+<h2>
+Authentic<br>
+<em>Nigerian Flavours.</em>
+</h2>
+
+<p>
+Freshly prepared Nigerian meals made with rich local
+flavours, generous portions, and plenty of heart.
+</p>
+
+</div>
+
+
+<div class="menu-list">
+
+
+<article class="menu-item">
+
+<div>
+
+<h3>
+Rice and Vegetable
+</h3>
+
+<p>
+Seasoned rice served with freshly prepared vegetable sauce.
+</p>
+
+</div>
+
+<span>
+₦7,000
+</span>
+
+</article>
+
+
+<article class="menu-item">
+
+<div>
+
+<h3>
+Rice and Egusi
+</h3>
+
+<p>
+Seasoned rice served with rich traditional egusi soup.
+</p>
+
+</div>
+
+<span>
+₦7,000
+</span>
+
+</article>
+
+
+<article class="menu-item">
+
+<div>
+
+<h3>
+Fufu/Eva and Egusi
+</h3>
+
+<p>
+Fufu or eba served with rich and delicious egusi soup.
+</p>
+
+</div>
+
+<span>
+₦2,500
+</span>
+
+</article>
+
+
+<article class="menu-item">
+
+<div>
+
+<h3>
+Fufu/Eba and Okra
+</h3>
+
+<p>
+Fufu or eba served with freshly prepared okra soup.
+</p>
+
+</div>
+
+<span>
+₦3,000
+</span>
+
+</article>
+
+
+<article class="menu-item">
+
+<div>
+
+<h3>
+Fufu/Eba and Vegetable
+</h3>
+
+<p>
+Fufu or eba served with delicious vegetable soup.
+</p>
+
+</div>
+
+<span>
+₦4,000
+</span>
+
+</article>
+
+
+<article class="menu-item">
+
+<div>
+
+<h3>
+Fufu/Eba and Oha Soup
+</h3>
+
+<p>
+Fufu or eba served with traditional oha soup.
+</p>
+
+</div>
+
+<span>
+₦2,500
+</span>
+
+</article>
+
+
+<article class="menu-item">
+
+<div>
+
+<h3>
+Fufu/Eba and Bitter Leaf Soup
+</h3>
+
+<p>
+Fufu or eba served with rich bitter leaf soup.
+</p>
+
+</div>
+
+<span>
+₦2,500
+</span>
+
+</article>
+
+
+</div>
+
+
+<p class="menu-note">
+Fresh food prepared daily. Additional meals and specials may be available.
+</p>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section class="gallery section">
+
+<div class="gallery-intro">
+
+<div class="section-label">
+
+<span>04</span>
+
+<span>At the Table</span>
+
+</div>
+
+<p>
+Good food. Good portions. Good company.
+</p>
+
+</div>
+
+
+<div class="gallery-grid">
+
+
+<figure class="gallery-large">
+
+<img
+src="/manus-storage/async-images/Y6ywjJt76H2BiiPuty8y8e/image-2.webp"
+alt="Fresh Nigerian meal"
+>
+
+<figcaption>
+
+Fresh from the kitchen
+
+<span>↗</span>
+
+</figcaption>
+
+</figure>
+
+
+<figure class="gallery-small">
+
+<img
+src="/manus-storage/async-images/Y6ywjJt76H2BiiPuty8y8e/image-3.webp"
+alt="Maine Kitchen Africana dining area"
+>
+
+<figcaption>
+
+The experience
+
+<span>↗</span>
+
+</figcaption>
+
+</figure>
+
+
+</div>
+
+</section>
+
+
+<!-- LOCATION -->
+
+<section
+class="visit section"
+id="visit"
+>
+
+<div class="section-label">
+
+<span>05</span>
+
+<span>Come See Us</span>
+
+</div>
+
+
+<div class="visit-grid">
+
+
+<div>
+
+<h2>
+Find your way<br>
+<em>to the table.</em>
+</h2>
+
+
+<a
+class="button button-light"
+href="https://www.google.com/maps/search/?api=1&query=Shop+RP+29,+Railway+Goodshade,+Opposite+MDS,+Dugbe,+Ibadan,+Nigeria"
+target="_blank"
+rel="noopener"
+>
+Get directions ↗
+</a>
+
+</div>
+
+
+<div class="visit-details">
+
+
+<div>
+
+<span class="detail-label">
+⌖ Find us
+</span>
+
+<p>
+Shop RP 29, Railway Goodshade,<br>
+Opposite MDS, Dugbe,<br>
+Ibadan, Oyo State, Nigeria
+</p>
+
+</div>
+
+
+<div>
+
+<span class="detail-label">
+☎ Call us
+</span>
+
+<p>
+
+<a href="tel:+2348167454525">
+08167454525
+</a>
+
+<br>
+
+<a href="tel:+2348068054138">
+08068054138
+</a>
+
+</p>
+
+</div>
+
+
+<div>
+
+<span class="detail-label">
+Hours
+</span>
+
+<p>
+Monday – Saturday<br>
+10:00 AM – 5:30 PM
+</p>
+
+</div>
+
+
+<div>
+
+<span class="detail-label">
+Services
+</span>
+
+<p>
+In-restaurant dining<br>
+Fresh food packs<br>
+Doorstep delivery<br>
+Event catering
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section
+class="contact section"
+id="contact"
+>
+
+<div class="section-label">
+
+<span>06</span>
+
+<span>Make an Enquiry</span>
+
+</div>
+
+
+<div class="contact-grid">
+
+
+<div>
+
+<h2>
+Have a question?<br>
+<em>Let's talk food.</em>
+</h2>
+
+
+<p>
+For food packs, doorstep delivery, event catering,
+large orders, or general enquiries, get in touch
+with Maine Kitchen Africana.
+</p>
+
+
+<div class="contact-social">
+
+<a href="tel:+2348167454525">
+08167454525
+</a>
+
+<a href="tel:+2348068054138">
+08068054138
+</a>
+
+</div>
+
+</div>
+
+
+<form
+class="contact-form"
+id="contactForm"
+>
+
+
+<label>
+
+Name
+
+<input
+required
+type="text"
+placeholder="Your name"
+>
+
+</label>
+
+
+<label>
+
+Phone Number
+
+<input
+required
+type="tel"
+placeholder="Your phone number"
+>
+
+</label>
+
+
+<label>
+
+Message
+
+<textarea
+required
+rows="3"
+placeholder="Tell us what you need..."
+></textarea>
+
+</label>
+
+
+<button
+class="button button-dark"
+type="submit"
+>
+Send an enquiry ↗
+</button>
+
+
+</form>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="site-footer">
+
+
+<a
+class="brand"
+href="#top"
+>
+
+<span class="brand-name">
+Maine Kitchen Africana.com
+</span>
+
+<span class="brand-sub">
+RESTAURANT <i>~</i>
+</span>
+
+</a>
+
+
+<p>
+Authentic Nigerian food, made with heart.
+</p>
+
+
+<span>
+© 2026 Maine Kitchen Africana.com
+</span>
+
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+/* MOBILE NAVIGATION */
+
+document
+.getElementById('menuToggle')
+.onclick = () => {
+
+const nav =
+document.getElementById('nav');
+
+nav.classList.toggle('is-open');
+
+document
+.getElementById('menuToggle')
+.setAttribute(
+'aria-label',
+nav.classList.contains('is-open')
+? 'Close navigation'
+: 'Open navigation'
+);
+
+};
+
+
+/* CLOSE MOBILE NAV AFTER CLICKING */
+
+document
+.querySelectorAll('#nav a')
+.forEach(a => {
+
+a.onclick = () => {
+
+document
+.getElementById('nav')
+.classList.remove('is-open');
+
+};
+
+});
+
+
+/* CONTACT FORM */
+
+document
+.getElementById('contactForm')
+.onsubmit = e => {
+
+e.preventDefault();
+
+e.currentTarget.innerHTML = `
+
+<div class="form-success">
+
+<span>✦</span>
+
+<h3>
+Thanks for reaching out.
+</h3>
+
+<p>
+Your enquiry has been received.
+We'
